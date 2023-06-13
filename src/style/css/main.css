@@ -1,0 +1,21 @@
+body#background {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgb(218, 243, 218));
+}
+
+main {
+  height: 100vh;
+}
+main header#title {
+  margin: 15rem 0rem 0rem 20rem;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+main div.icon {
+  margin: 0rem 0rem 0rem 20rem;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+/*# sourceMappingURL=main.css.map */
