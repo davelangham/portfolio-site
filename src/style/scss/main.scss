@@ -1,23 +1,39 @@
-body#background {
-  // Trying to layer a barely opaque layer of black over a green background. Should I use pseudo element instead of linear gradient? Or maybe just create a new tag within body and add a background colour to it with opacity?
-  background:rgba(218, 243, 218, 1);
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@1,300&family=Roboto:wght@500&display=swap');
+
+body {
+  margin: 1rem 1rem 1rem 1rem;
 }
 
-main { 
-  height: 100vh;
+#background {
+  background-color: rgb(255, 251, 251);
+  height: calc(100vh - 2rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-  header#title {
-    margin: 15rem 0rem 0rem 20rem;
-    display: flex;
-    align-items: center;
-    gap: 3rem;
+  header {
+    margin: 0 0 1rem 7rem;
+    
+    #title {
+      font-family: 'Public Sans', sans-serif;
+      font-size: 48px;
+      font-weight: 300;
+      font-style: italic;
+      color: rgb(95, 99, 98);
+    }
+
+    #firstName{
+      font-family: 'Roboto', sans-serif;
+      font-size: 48px;
+      font-weight: 500;
+      font-style: normal;
+      color: rgb(66,82, 76);
+    }
   }
-  
-  div.icon {
-    margin: 0rem 0rem 0rem 20rem;
+
+  .icon {
+    margin-left: 7rem;
     display: flex;
-    align-items: center;
     gap: 3rem;
   }
 }
-

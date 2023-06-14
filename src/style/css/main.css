@@ -1,20 +1,35 @@
-body#background {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgb(218, 243, 218));
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@1,300&family=Roboto:wght@500&display=swap");
+body {
+  margin: 1rem 1rem 1rem 1rem;
 }
 
-main {
-  height: 100vh;
-}
-main header#title {
-  margin: 15rem 0rem 0rem 20rem;
+#background {
+  background-color: rgb(255, 251, 251);
+  height: calc(100vh - 2rem);
   display: flex;
-  align-items: center;
-  gap: 3rem;
+  flex-direction: column;
+  justify-content: center;
 }
-main div.icon {
-  margin: 0rem 0rem 0rem 20rem;
+#background header {
+  margin: 0 0 1rem 7rem;
+}
+#background header #title {
+  font-family: "Public Sans", sans-serif;
+  font-size: 48px;
+  font-weight: 300;
+  font-style: italic;
+  color: rgb(95, 99, 98);
+}
+#background header #firstName {
+  font-family: "Roboto", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  font-style: normal;
+  color: rgb(66, 82, 76);
+}
+#background .icon {
+  margin-left: 7rem;
   display: flex;
-  align-items: center;
   gap: 3rem;
 }
 
